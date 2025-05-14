@@ -16,6 +16,8 @@
 Примечание 2. Приведенные ниже тесты это лишь образцы возможного ответа. Возможны и другие способы выбора тайных друзей.
 """
 
+# Решение "позаимствовано" на сайте https://taskcode.ru/12-2-pokolenie-python-advanced/
+
 from random import *
 
 fri = [input() for _ in range(int(input()))]
