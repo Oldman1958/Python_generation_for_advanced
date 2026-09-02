@@ -24,7 +24,10 @@ for value in lst:
         res[value] += 1
         print(f'{value}_{res[value]}', end=' ')
 
-        
-        
-        
-        
+"""
+Альтернативный вариант
+lst, res = list(map(str, input().split())), {}
+for v in lst:
+    print(f'{v}' if v not in res else f'{v}_{res[v]}', end=' ')
+    res[v] = res.get(v, 0) + 1
+"""
