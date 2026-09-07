@@ -25,8 +25,8 @@ def add_query_string(url, query={}):
         return url
     result_url = f'{url}?'
     for k, v in query.items():
-        result_url += f'&{k}={query[k]}'
-    return result_url
+        result_url += f'{k}={query[k]}&'
+    return result_url.rstrip('&')
 
 
 print(add_query_string('pygen.ru', {'per': '10', 'page': 1}))
