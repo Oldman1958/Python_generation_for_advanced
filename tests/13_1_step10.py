@@ -9,7 +9,7 @@
 
 from decimal import *
 
-# s = '0.0 5.42 8.63 10.25 1.6 -8.5 -13.0'
+s = '0.0 5.42 8.63 10.25 1.6 -8.5 -13.0'
 
 numbers = [Decimal(i) for i in s.split()]
 
