@@ -17,3 +17,8 @@ from decimal import Decimal as D
 d = D(input())
 
 print(D.exp(d) + D.ln(d) + D.log10(d) + D.sqrt(d))
+
+""" 
+Но можно и так
+print(d.exp() + d.ln() + d.log10() + d.sqrt())
+"""
