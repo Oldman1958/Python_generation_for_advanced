@@ -13,7 +13,7 @@
 
 from fractions import Fraction as F
 
-m = int(input())
-n = int(input())
+m = F(input())
+n = F(input())
 
-print(F(m/n))
+print(m/n)
