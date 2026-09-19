@@ -15,10 +15,10 @@
 
 from fractions import Fraction as F
 
-f1 = F(input())
-f2 = F(input())
+f1 = input()
+f2 = input()
 
-print(f'{f1} + {f2} = {f1 + f2}')
-print(f'{f1} - {f2} = {f1 - f2}')
-print(f'{f1} * {f2} = {f1 * f2}')
-print(f'{f1} / {f2} = {f1 / f2}')
+print(f'{f1} + {f2} = {F(f1) + F(f2)}')
+print(f'{f1} - {f2} = {F(f1) - F(f2)}')
+print(f'{f1} * {f2} = {F(f1) * F(f2)}')
+print(f'{f1} / {f2} = {F(f1) / F(f2)}')
