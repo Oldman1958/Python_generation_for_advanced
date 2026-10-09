@@ -21,13 +21,8 @@ def map(function, items):
 
     return result
 
-# Функция для округления до 2 знаков после запятой
-def round_2(x):
-    return round(x, 2)
-
-
-# Применяем map с нашей функцией округления
-rounded_numbers = map(round_2, numbers)
+# Применяем мар с лямбда функцией, которая каждое переданное ей значение округляет до 2-х знаков
+rounded_numbers = map(lambda x: round(x, 2), numbers)
 
 # Выводим каждый элемент на отдельной строке
 for num in rounded_numbers:
