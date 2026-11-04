@@ -32,12 +32,22 @@
 from functools import reduce
 
 
+"""
+Более громоздкое решение :(
+
 def evaluate(coefficients, x):
     # Степени: первый коэффициент — при самой старшей степени
     powers = map(lambda i: x ** i, range(len(coefficients) - 1, -1, -1))
     # Складываем произведения коэффициентов на соответствующие степени x
     return reduce(lambda acc, pair: acc + pair[0] * pair[1],
                   zip(coefficients, powers), 0)
+"""
+                  
+# Более элегантное решение, по схеме Горнера
+
+def evaluate(coefficients, x):
+    return reduce(lambda acc, a: acc * x + a, coefficients, 0)
+
 
 
 coefficients = list(map(int, input().split()))
