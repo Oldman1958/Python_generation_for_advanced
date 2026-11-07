@@ -21,8 +21,8 @@ def ignore_command(command):
 
 def ignore_command(command):
     ignore = ['alias', 'configuration', 'ip', 'sql', 'select', 'update', 'exec', 'del', 'truncate']
-    result = any(map(lambda x: True if x in ignore else False, ignore))
-    return result
+    return any(word in command for word in ignore)
 
 
 print(ignore_command('get ip'))
+print(ignore_command('trancate'))
