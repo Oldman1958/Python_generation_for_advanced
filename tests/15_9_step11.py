@@ -29,6 +29,6 @@ IP-адрес – уникальный числовой идентификато
 """
 
 
-ip_adres = list(map(int, input().split('.')))
+# ip_address = all(list(map(lambda x: x.isdigit(), input().split('.'))))
 
-print(ip_adres)
+print(all(list(map(lambda x: x.isdigit() and 0<=int(x)<=259, input().split('.')))))
