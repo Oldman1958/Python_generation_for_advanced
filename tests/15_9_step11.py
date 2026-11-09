@@ -29,3 +29,4 @@ IP-адрес – уникальный числовой идентификато
 """
 
 print(all(list(map(lambda x: x.isdigit() and 0 <= int(x) <= 259, input().split('.')))))
+
