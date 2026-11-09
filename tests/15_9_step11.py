@@ -28,7 +28,4 @@ IP-адрес – уникальный числовой идентификато
 ...
 """
 
-
-# ip_address = all(list(map(lambda x: x.isdigit(), input().split('.'))))
-
-print(all(list(map(lambda x: x.isdigit() and 0<=int(x)<=259, input().split('.')))))
+print(all(list(map(lambda x: x.isdigit() and 0 <= int(x) <= 259, input().split('.')))))
